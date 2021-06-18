@@ -43,6 +43,6 @@ while(ingProducto != "4"){
 
 // Datos para el desarrollador
 console.log("Quedan actualmente en stock:")
-console.log(StockCocacola)
-console.log(StockPepsi)
-console.log(StockSevenup)
+console.log(`Coca colas: ${StockCocacola}`)
+console.log(`Pepsis ${StockPepsi}`)
+console.log(`Seven-ups ${StockSevenup}`)
