@@ -1,9 +1,13 @@
+
+//Ciclos e iteraciones
+
+// Variables de ingreso
 var ingProducto = parseInt(prompt("Ingrese el numero del producto deseado\n 1) Coca cola \n 2) Pepsi \n 3) Seven-up \n 4) Cancelar"))
 var StockCocacola = 10
 var StockPepsi = 10
 var StockSevenup = 10
 
-
+// Ciclo while + Switch
 while(ingProducto != "4"){
    switch (ingProducto) {
        case 1:
@@ -26,6 +30,7 @@ while(ingProducto != "4"){
    ingProducto = parseInt(prompt("Ingrese el numero del producto deseado\n 1) Coca cola \n 2) Pepsi \n 3) Seven-up \n 4) Cancelar"))
 }
 
+// Datos para el desarrollador
 console.log("Quedan actualmente en stock:")
 console.log(StockCocacola)
 console.log(StockPepsi)
