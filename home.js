@@ -20,7 +20,7 @@ while(ingProducto != "4"){
             alert(`Seleccionaste Seven-up, nos quedan ${StockSevenup} en stock`)
             break;
        default:
-        alert(`Selecciona un producto o escribi Cancelar para finalizar`);   
+        alert(`Selecciona un producto o seleecione 4 para salir`);   
         break;
    }
    ingProducto = parseInt(prompt("Ingrese el numero del producto deseado\n 1) Coca cola \n 2) Pepsi \n 3) Seven-up \n 4) Cancelar"))
