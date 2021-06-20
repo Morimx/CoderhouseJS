@@ -93,10 +93,10 @@ function Productos(Ingresodenumero1, Ingresodenumero2){
 
 
 const iva = 1.21;
-const preciobkp = 5000;
-const precioformateo = 2000;
-const preciosoft = 1000;
-const precio = 8000;
+let preciobkp = 5000;
+let precioformateo = 2000;
+let preciosoft = 1000;
+let precio = 8000;
 let resultadofinal = 0;
 const pantalla = document.querySelector('.numero');
 const trescuota = document.querySelector('.trescuota');
@@ -120,13 +120,6 @@ function InstalacionSoft(){
 return alert(`Elegiste instalacion de soft el costo final es de: ${preciosoft*iva}$`);
 }
 
-
-function reiniciaracero(){
-    resultadofinal = 0;
-    pantalla.innerHTML = resultadofinal
-    return;
-}
-
 function trescuotas(){
     trescuota.innerHTML = resultadofinal/3;
 }
@@ -137,4 +130,13 @@ function seiscuotas(){
 
 function docecuotas(){
     docecuota.innerHTML = resultadofinal/12;
+}
+
+function reiniciaracero(){
+    resultadofinal = 0;
+    docecuota.innerHTML = 0;
+    seiscuota.innerHTML = 0;
+    trescuota.innerHTML = 0;
+    pantalla.innerHTML = resultadofinal
+    return;
 }
