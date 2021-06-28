@@ -5,6 +5,7 @@ const pantalla = document.querySelector('.numero');
 const cantCuotas = document.querySelector('.cantCuotas');
 const mostrarCarrito1 = document.querySelector('.carritos');
 let carrito = [];
+const registrados = [];
 
 // Funciones de precios //
 let cuotas = {
@@ -20,6 +21,7 @@ let precios = {
     }
     /////
 
+
 function preciocompleto(articulo) {
     if (precios[articulo]) {
         resultadofinal += precios[articulo] * iva;
@@ -27,7 +29,7 @@ function preciocompleto(articulo) {
         let newItem = {};
         newItem[articulo] = precios[articulo] * iva
         carrito.push(newItem)
-        return alert(`Elegiste ${precios[articulo]*iva}$`);
+        return alert(`Costo iva incluido: ${precios[articulo]*iva}$`);
     }
     return alert(`el precio ${articulo} no existe`);
 }
@@ -49,4 +51,16 @@ function reiniciaracero() {
     return;
 }
 
-console.log(carrito);
+function Registro() {
+    const usuarios = {};
+    usuarios.nombre = prompt("Ingrese Nombre");
+    usuarios.email = prompt("Ingrese su Mail");
+    registrar(usuarios);
+};
+
+function registrar(nuevoUsuario) {
+    if (nuevoUsuario.nombre == "") {
+        return alert("Faltan Datos, por favor presione 'Comenzar'");
+    }
+    registrados.push(nuevoUsuario);
+};
