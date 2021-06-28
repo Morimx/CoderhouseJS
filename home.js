@@ -59,7 +59,7 @@ function Registro() {
 };
 
 function registrar(nuevoUsuario) {
-    if (nuevoUsuario.nombre == "") {
+    if (nuevoUsuario.nombre == "" || nuevoUsuario.email == "") {
         return alert("Faltan Datos, por favor presione 'Comenzar'");
     }
     registrados.push(nuevoUsuario);
