@@ -12,58 +12,79 @@
 
 <body>
 
+
+    <div class="topnav pb-2 text-center" style="background-color: black;">
+        <div class="login-container">
+            <form action="">
+                <input type="text" placeholder="Username" name="username">
+                <input type="password" placeholder="Password" name="psw">
+                <button type="submit" class="btn btn-outline-info"> <i
+                        class="bi mx-1 bi-box-arrow-in-right"></i>Login</button>
+                <button class="btn btn-outline-secondary" type="submit" " onclick="Registro() "><i class=" bi bi-person-circle icon mx-1 " ></i>Sign-up</button>
+            </form>
+        </div>
+    </div>
+    
     <!--Registro-->
 
-    <div class="text-center">
+    <div class="text-center ">
         <form>
-            <input type="button" class="btn btn-lg btn-warning mt-3" value="Registrate" onclick="Registro()">
+            <input type="button " class="btn btn-lg btn-warning mt-3 " value="Registrate " >
         </form>
     </div>
 
 
     <!--Boton de Servicios-->
-    <div class="dropdown mt-5 text-center">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="dropdown mt-5 text-center ">
+        <button class="btn btn-secondary dropdown-toggle " type="button " id="dropdownMenuButton1 " data-bs-toggle="dropdown " aria-expanded="false ">
       Elegi los servicios deseados
     </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#" onclick="preciocompleto('precioformateo')">Formateo de PC: 2000$ + iva</a></li>
-            <li><a class="dropdown-item" href="#" onclick="preciocompleto('preciobkp')">Servicio de backups en la nube: 5000$ + iva</a></li>
-            <li><a class="dropdown-item" href="#" onclick="preciocompleto('preciosoft')">Instalacion de software: 1000$ + iva</a></li>
+        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1 ">
+            <li><a class="dropdown-item " href="# " onclick="preciocompleto( 'precioformateo') ">Formateo de PC: 2000$ + iva</a></li>
+            <li><a class="dropdown-item " href="# " onclick="preciocompleto( 'preciobkp') ">Servicio de backups en la nube: 5000$ + iva</a></li>
+            <li><a class="dropdown-item " href="# " onclick="preciocompleto( 'preciosoft') ">Instalacion de software: 1000$ + iva</a></li>
         </ul>
 
         <!--Display de Precios-->
-        <div class="mt-2">
-            <p style="font-weight: bold;">Total actual:
-                <div class="numero text-center"></div>
+        <div class="mt-2 ">
+            <p style="font-weight: bold; ">Total actual:
+                <div class="numero text-center "></div>
             </p>
 
 
             <!--Boton de Cuotas-->
-            <div class="dropdown mt-5 text-center">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="dropdown mt-5 text-center ">
+                <button class="btn btn-secondary dropdown-toggle " type="button " id="dropdownMenuButton1 " data-bs-toggle="dropdown " aria-expanded="false ">
       Elegi la cantidad de cuotas:  
     </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('trescuotas')">3 Cuotas sin interes</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('seiscuotas')">6 Cuotas sin interes</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('docecuotas')">12 cuotas sin interes</a></li>
+                <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1 ">
+                    <li><a class="dropdown-item " href="# " onclick="mostrarCuotas( 'trescuotas') ">3 Cuotas sin interes</a></li>
+                    <li><a class="dropdown-item " href="# " onclick="mostrarCuotas( 'seiscuotas') ">6 Cuotas sin interes</a></li>
+                    <li><a class="dropdown-item " href="# " onclick="mostrarCuotas( 'docecuotas') ">12 cuotas sin interes</a></li>
                 </ul>
 
                 <!--Display de cuotas-->
-                <div class="mb-2 mt-2">
-                    <p style="font-weight: bold;">Total en cuotas:</p>
-                    <div class="cantCuotas text-center"></div>
+                <div class="mb-2 mt-2 ">
+                    <p style="font-weight: bold; ">Total en cuotas:</p>
+                    <div class="cantCuotas text-center "></div>
 
 
 
                     <!--Reinicio de precio-->
                     <div>
                         <form>
-                            <input type="button" class="btn btn-primary mt-3" value="Reiniciar a 0" onclick="reiniciaracero()">
+                            <input type="button " class="btn btn-primary mt-3 " value="Reiniciar a 0 " onclick="reiniciaracero() ">
                         </form>
                     </div>
-                    <script src="./home.js"></script>
+                    <script src="./home.js "></script>
+</body>
+
+<script src="./variables/variables.js "></script>
+<script src="./functions/registrarusuario.js "></script>
+<script src="./functions/calcprecioycarrito.js "></script>
+<script src="./functions/calccuotas.js "></script>
+<script src="./functions/Reiniciardisplays.js "></script>
+<script src="./home.js "></script>
 </body>
 
 </html>
