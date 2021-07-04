@@ -3,7 +3,6 @@ function Registro() {
     usuarios.nombre = prompt("Ingrese Nombre");
     usuarios.email = prompt("Ingrese su Mail");
     registrar(usuarios);
-    return alert("La password sera enviada por correo electronico");
 };
 
 function registrar(nuevoUsuario) {
@@ -11,4 +10,5 @@ function registrar(nuevoUsuario) {
         return alert("Faltan Datos, por favor presione 'Comenzar'");
     }
     registrados.push(nuevoUsuario);
+    alert("La password sera enviada por correo electronico")
 };
