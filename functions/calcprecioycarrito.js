@@ -18,7 +18,6 @@ function preciocompleto2(articulo) {
 
 
 
-
 /*function preciocompleto(articulo) {
     if (precios[articulo]) {
         resultadofinal += precios[articulo] * iva;
