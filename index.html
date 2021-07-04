@@ -37,14 +37,6 @@
             <li><a class="dropdown-item" href="#" onclick="preciocompleto('preciosoft')">Instalacion de software: 1000$ + iva</a></li>
         </ul>
 
-        <!--Display de Precios-->
-        <div class="mt-2">
-            <p style="font-weight: bold;">Total actual:
-                <div class="numero text-center"></div>
-            </p>
-        </div>
-
-
         <!--Boton de Cuotas-->
         <div class="dropdown mt-5 text-center">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -56,14 +48,6 @@
                 <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('docecuotas')">12 cuotas sin interes</a></li>
             </ul>
         </div>
-        <!--Display de cuotas-->
-        <div class="mb-2 mt-2">
-            <p style="font-weight: bold;">Total en cuotas:</p>
-            <div class="cantCuotas text-center"></div>
-        </div>
-
-
-
         <!--Reinicio de precio-->
         <div>
             <form>
@@ -72,8 +56,25 @@
         </div>
 
         <!--Carrito-->
-        <div id="carrito">
+        <div>
+            <p>
+                <h2>Carrito de servicios</h2>
+            </p>
+            <div class="carrito">
+            </div>
+        </div>
 
+        <!--Display de Precios-->
+        <div class="mt-2">
+            <p style="font-weight: bold;">Total actual:
+                <div class="numero text-center"></div>
+            </p>
+        </div>
+
+        <!--Display de cuotas-->
+        <div class="mb-2 mt-2">
+            <p style="font-weight: bold;">Total en cuotas:</p>
+            <div class="cantCuotas text-center"></div>
         </div>
 
         <script src="./variables/variables.js "></script>

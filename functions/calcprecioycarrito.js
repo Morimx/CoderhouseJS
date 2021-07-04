@@ -5,6 +5,7 @@ function preciocompleto(articulo) {
         let newItem = {};
         newItem[articulo] = precios[articulo] * iva
         carrito.push(newItem)
+        mostrarCarrito1.innerHTML = JSON.stringify(carrito)
         return alert(`Costo iva incluido: ${precios[articulo]*iva}$`);
     }
     return alert(`el precio ${articulo} no existe`);
