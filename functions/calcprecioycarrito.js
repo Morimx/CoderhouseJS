@@ -1,3 +1,24 @@
+function preciocompleto2(articulo) {
+    servicios.forEach(x => {
+        if (articulo == x.nombre) {
+            resultadofinal += x.precio * iva;
+            pantalla.innerHTML = resultadofinal;
+            carrito.push(x);
+            alert(`Costo iva incluido: ${x.precio*iva}$`);
+        }
+    })
+    var carritoitems = '';
+    carrito.forEach(c => {
+        let citemnombre = c.nombre;
+        let citemprecio = c.precio;
+        carritoitems += `<li>${citemnombre}: ${citemprecio}</li>`
+        mostrarCarrito1.innerHTML = carritoitems
+    })
+}
+
+
+
+
 /*function preciocompleto(articulo) {
     if (precios[articulo]) {
         resultadofinal += precios[articulo] * iva;
@@ -12,7 +33,7 @@
 }*/
 
 
-function preciocompleto2(articulo) {
+/*function preciocompleto2(articulo) {
     for (x = 0; x < servicios.length; x++) {
         if (articulo == servicios[x].nombre) {
             resultadofinal += servicios[x].precio * iva;
@@ -28,4 +49,4 @@ function preciocompleto2(articulo) {
         carritoitems += `${citemnombre}: ${citemprecio} - `
         mostrarCarrito1.innerHTML = carritoitems
     }
-}
+}*/
