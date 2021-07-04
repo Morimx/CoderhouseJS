@@ -13,7 +13,18 @@
 <body>
 
     <!--Boton de registro-->
-    <button type="button" class="btn btn-dark" onclick="registro()">Registrate</button>
+
+    <form action="" style="background-color: black;">
+        <div class="d-flex flex-row-reverse bd-highlight">
+            <input class="m-3" type="password" placeholder="Password" name="psw">
+            <input type="text" placeholder="Username" name="username" class="m-3">
+            <div class="p-2 bd-highlight">
+                <button type="button" class="btn btn-success" onclick="registro()">Registrate</button>
+                <button type="button" class="btn btn-success" onclick="">Login</button>
+            </div>
+        </div>
+    </form>
+
 
     <!--Boton de Servicios-->
     <div class="dropdown mt-5 text-center">
@@ -31,40 +42,46 @@
             <p style="font-weight: bold;">Total actual:
                 <div class="numero text-center"></div>
             </p>
+        </div>
 
 
-            <!--Boton de Cuotas-->
-            <div class="dropdown mt-5 text-center">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <!--Boton de Cuotas-->
+        <div class="dropdown mt-5 text-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
       Elegi la cantidad de cuotas:  
-    </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('trescuotas')">3 Cuotas sin interes</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('seiscuotas')">6 Cuotas sin interes</a></li>
-                    <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('docecuotas')">12 cuotas sin interes</a></li>
-                </ul>
-
-                <!--Display de cuotas-->
-                <div class="mb-2 mt-2">
-                    <p style="font-weight: bold;">Total en cuotas:</p>
-                    <div class="cantCuotas text-center"></div>
-
-
-
-                    <!--Reinicio de precio-->
-                    <div>
-                        <form>
-                            <input type="button" class="btn btn-primary mt-3" value="Reiniciar a 0" onclick="reiniciaracero()">
-                        </form>
-                    </div>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('trescuotas')">3 Cuotas sin interes</a></li>
+                <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('seiscuotas')">6 Cuotas sin interes</a></li>
+                <li><a class="dropdown-item" href="#" onclick="mostrarCuotas('docecuotas')">12 cuotas sin interes</a></li>
+            </ul>
+        </div>
+        <!--Display de cuotas-->
+        <div class="mb-2 mt-2">
+            <p style="font-weight: bold;">Total en cuotas:</p>
+            <div class="cantCuotas text-center"></div>
+        </div>
 
 
-                    <script src="./variables/variables.js "></script>
-                    <script src="./functions/registrarusuario.js "></script>
-                    <script src="./functions/calcprecioycarrito.js "></script>
-                    <script src="./functions/calccuotas.js "></script>
-                    <script src="./functions/Reiniciardisplays.js "></script>
-                    <script src="./home.js "></script>
+
+        <!--Reinicio de precio-->
+        <div>
+            <form>
+                <input type="button" class="btn btn-primary mt-3" value="Reiniciar a 0" onclick="reiniciaracero()">
+            </form>
+        </div>
+
+        <!--Carrito-->
+        <div id="carrito">
+
+        </div>
+
+        <script src="./variables/variables.js "></script>
+        <script src="./functions/registrarusuario.js "></script>
+        <script src="./functions/calcprecioycarrito.js "></script>
+        <script src="./functions/calccuotas.js "></script>
+        <script src="./functions/Reiniciardisplays.js "></script>
+        <script src="./home.js "></script>
 
 </body>
 

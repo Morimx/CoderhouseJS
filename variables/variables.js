@@ -2,7 +2,7 @@ const iva = 1.21;
 let resultadofinal = 0;
 const pantalla = document.querySelector('.numero');
 const cantCuotas = document.querySelector('.cantCuotas');
-const mostrarCarrito1 = document.querySelector('.carritos');
+const mostrarCarrito1 = document.querySelector('.carrito');
 let carrito = [];
 const registrados = [];
 
