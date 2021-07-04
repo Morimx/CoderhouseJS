@@ -1,4 +1,4 @@
-function Registro() {
+function registro() {
     const usuarios = {};
     usuarios.nombre = prompt("Ingrese Nombre");
     usuarios.email = prompt("Ingrese su Mail");
