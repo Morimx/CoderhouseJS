@@ -21,15 +21,11 @@ function preciocompleto2(articulo) {
             alert(`Costo iva incluido: ${servicios[x].precio*iva}$`);
         }
     }
-
     var carritoitems = "";
-
     for (c = 0; c < carrito.length; c++) {
         let citemnombre = carrito[c].nombre;
         let citemprecio = carrito[c].precio;
         carritoitems += `${citemnombre}: ${citemprecio} - `
         mostrarCarrito1.innerHTML = carritoitems
     }
-
-
 }

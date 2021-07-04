@@ -3,7 +3,7 @@ let resultadofinal = 0;
 const pantalla = document.querySelector('.numero');
 const cantCuotas = document.querySelector('.cantCuotas');
 const mostrarCarrito1 = document.querySelector('.carrito');
-const carrito = [];
+let carrito = [];
 const registrados = [];
 
 
@@ -14,11 +14,6 @@ let cuotas = {
     docecuotas: 12,
 }
 
-let precios = {
-    precioformateo: 2000,
-    preciobkp: 5000,
-    preciosoft: 1000,
-}
 
 let servicios = [{
     nombre: "Precio de Formateo",
