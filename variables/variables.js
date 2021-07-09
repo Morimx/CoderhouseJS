@@ -3,8 +3,8 @@ let resultadofinal = 0;
 const pantalla = document.querySelector('.numero');
 const cantCuotas = document.querySelector('.cantCuotas');
 const mostrarCarrito1 = document.querySelector('.carrito');
-const carrito = [];
-const registrados = [];
+let carrito = [];
+let registrados = [];
 const loginlogout = document.querySelector('.loginbtn');
 
 
