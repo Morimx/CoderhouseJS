@@ -3,7 +3,7 @@ let resultadofinal = 0;
 const pantalla = document.querySelector('.numero');
 const cantCuotas = document.querySelector('.cantCuotas');
 const mostrarCarrito1 = document.querySelector('.carrito');
-let carrito = [];
+const carrito = [];
 const registrados = [];
 const loginlogout = document.querySelector('.loginbtn');
 

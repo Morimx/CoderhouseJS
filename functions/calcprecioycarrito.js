@@ -11,7 +11,7 @@ function preciocompleto2(articulo) {
     carrito.forEach(c => {
         let citemnombre = c.nombre;
         let citemprecio = c.precio;
-        carritoitems += `<li>${citemnombre}: ${citemprecio}</li>`
+        carritoitems += `<li>${citemnombre}: ${citemprecio} sin iva incluido</li>`
         mostrarCarrito1.innerHTML = carritoitems
     })
 }

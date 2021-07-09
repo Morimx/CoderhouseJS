@@ -1,0 +1,13 @@
+.card-img-top {
+    height: 15rem;
+    object-fit: cover;
+}
+
+.background {
+    background-color: rgb(19, 23, 34);
+    color: white;
+}
+
+.cardsbg {
+    background-color: rgb(101, 125, 136);
+}
