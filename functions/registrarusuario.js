@@ -14,7 +14,7 @@ function registrar(nuevoUsuario) {
 }; */
 
 class Usuarioreg {
-    constructor(email, fullname, password) {
+    constructor(email, password) {
         this.email = email;
         this.password = password;
     };

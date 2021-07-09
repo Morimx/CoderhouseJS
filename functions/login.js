@@ -15,7 +15,7 @@ function login(correo, password) {
     const passwdUsuario = localStorage.getItem(mail)
 
     if (passwdUsuario == passwd) {
-        window.open("./index.html", "_self")
+        window.open("./mainpage.html", "_self")
         return;
     }
     alert("Usuario o contraseña incorrecto")
