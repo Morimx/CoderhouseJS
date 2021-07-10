@@ -4,14 +4,13 @@ function preciocompleto2(articulo) {
             resultadofinal += x.precio * iva;
             pantalla.innerHTML = resultadofinal;
             carrito.push(x);
-            alert(`Costo iva incluido: ${x.precio*iva}$`);
         }
     })
     var carritoitems = '';
     carrito.forEach(c => {
         let citemnombre = c.nombre;
         let citemprecio = c.precio;
-        carritoitems += `<li>${citemnombre}: ${citemprecio} sin iva incluido</li>`
+        carritoitems += `<li>${citemnombre}: ${citemprecio} sin IVA incluido   </li>`
         mostrarCarrito1.innerHTML = carritoitems
     })
 }

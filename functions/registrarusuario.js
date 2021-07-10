@@ -13,6 +13,7 @@ function registrar(nuevoUsuario) {
     alert("La password sera enviada por correo electronico")
 }; */
 
+// Constructor para registro de usuarios //
 class Usuarioreg {
     constructor(email, password) {
         this.email = email;
@@ -21,7 +22,7 @@ class Usuarioreg {
 };
 
 
-
+//Funcion de registro //
 function registrodeusuarios() {
     let mail = document.querySelector('.mail').value;
     let passwd = document.querySelector('.passwd').value;
@@ -29,7 +30,7 @@ function registrodeusuarios() {
     submit(mail, passwd)
 }
 
-
+// Funcion para submit de usuario y push al array//
 function submit(mail, passwd) {
     if (!existeMail(mail)) {
         localStorage.setItem(mail, passwd);
@@ -41,6 +42,7 @@ function submit(mail, passwd) {
 
 }
 
+// Validacion de existencia de correo//
 function existeMail(mail) {
     return localStorage.getItem(mail)
 }

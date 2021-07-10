@@ -1,3 +1,4 @@
+//Funcion Mostrar contraseña
 function showPassword() {
     var password = document.getElementById('pwd');
     if (password.type === 'password') {
@@ -7,6 +8,7 @@ function showPassword() {
     }
 }
 
+// Funcion para logueo de usuario
 function login(correo, password) {
 
     let mail = correo || document.querySelector('.emaillgin').value;
