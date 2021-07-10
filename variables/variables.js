@@ -18,15 +18,15 @@ let cuotas = {
 
 //Lista de servicios//
 let servicios = [{
-    nombre: "Precio de Formateo",
+    nombre: "Formateo",
     precio: 2000,
     descripcion: "",
 }, {
-    nombre: "Precio Backup",
+    nombre: "Backup Cloud",
     precio: 5000,
     descripcion: "",
 }, {
-    nombre: "Precio Software",
+    nombre: "Instalacion de Software",
     precio: 1000,
     descripcion: "kakl asdas",
 }, ]
