@@ -20,9 +20,7 @@ class Usuarioreg {
     };
 };
 
-function existeMail(mail) {
-    return localStorage.getItem(mail)
-}
+
 
 function registrodeusuarios() {
     let mail = document.querySelector('.mail').value;
@@ -41,4 +39,8 @@ function submit(mail, passwd) {
         alert("El correo ya esta registrado")
     }
 
+}
+
+function existeMail(mail) {
+    return localStorage.getItem(mail)
 }
