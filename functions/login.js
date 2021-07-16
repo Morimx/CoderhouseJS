@@ -19,7 +19,8 @@ function login(correo, password) {
     if (passwdUsuario == passwd) {
         window.open("./mainpage.html", "_self")
         return;
+    } else {
+        alert("Usuario o contraseña incorrecto")
     }
-    alert("Usuario o contraseña incorrecto")
 
 }
