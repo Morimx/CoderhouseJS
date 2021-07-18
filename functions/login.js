@@ -11,8 +11,8 @@ function showPassword() {
 // Funcion para logueo de usuario
 function login(correo, password) {
 
-    let mail = correo || document.querySelector('.emaillgin').value;
-    let passwd = password || document.querySelector('.passwdlgin').value;
+    let mail = correo || $('.emaillgin').val();
+    let passwd = password || $('.passwdlgin').val();
 
     const passwdUsuario = localStorage.getItem(mail)
 
